@@ -57,7 +57,7 @@ const Content = styled.div`
     }
     .part04{
         grid-area: part04;
-        background-color: #142342;
+        /* background-color: #142342; */
         /* background-color: red; */
     }
     .part05{

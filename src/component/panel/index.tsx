@@ -1,14 +1,16 @@
-import { FC, useEffect, useRef, useState } from "react"
+import { FC } from "react"
 import styled, { CSSProperties } from "styled-components"
 import XBorder from "./border";
 
 interface PanelProps {
   width: number,
   height: number,
+  title: string,
+  children?: any
 }
 
 const Panel: FC<PanelProps> = (props) => {
-  const { width, height } = props
+  const { width, height, children, title } = props
 
   const styl: CSSProperties = {
     width,
@@ -17,8 +19,9 @@ const Panel: FC<PanelProps> = (props) => {
 
   return <Content style={styl}>
     <h3 className="title">
-      <span className="title-left">课堂评价</span>
+      <span className="title-left">{title}</span>
     </h3>
+    {children}
     <XBorder className="border" width={width} height={height} />
   </Content>
 }
@@ -26,7 +29,8 @@ const Panel: FC<PanelProps> = (props) => {
 export default Panel
 
 const Content = styled.div`
-  background-color: '#0f113a';
+  background: linear-gradient(rgba(15,17,58,1) 50%, rgba(15,17,58,.5));
+  /* background-color: red; */
   position: relative;
   .border {
     position: absolute;

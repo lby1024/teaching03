@@ -38,7 +38,7 @@ const XBorder: FC<IFlyBorder> = ({ width, height, className }) => {
           cy="50%"
           fx="50%"
           fy="50%"
-          r="50%"
+          r="20%"
         >
           <stop offset="0%" stopColor="#fff" stopOpacity="1"></stop>
           <stop offset="100%" stopColor="#fff" stopOpacity="0"></stop>
@@ -54,7 +54,7 @@ const XBorder: FC<IFlyBorder> = ({ width, height, className }) => {
         </mask>
       </defs>
       {/*  */}
-      <use href={`#${rectId}`} strokeWidth="2" stroke="#0d3666" />
+      <use href={`#${rectId}`} strokeWidth="2" stroke="rgba(10,82,153,.4)" />
       <use
         href={`#${rectId}`}
         strokeWidth="3"

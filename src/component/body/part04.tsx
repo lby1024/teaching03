@@ -1,13 +1,17 @@
 import styled from "styled-components"
-import { useTeamBar } from "../../useData/use-teamBar"
+import Panel from "../panel"
+
+const Up = () => {
+  return <UpContent></UpContent>
+}
 
 const Part04 = () => {
 
-  const [chart] = useTeamBar()
 
   return (
     <Content>
-      <div className="item" style={{ width: 900, height: 200 }} ref={chart} ></div>
+      <Up />
+      <Panel width={792} height={410} ></Panel>
     </Content>
   )
 }
@@ -15,9 +19,27 @@ const Part04 = () => {
 export default Part04
 
 const Content = styled.div`
-    width: 780px;
-    height: 229px;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    `
+
+const UpContent = styled.div`
+  /* background-color: #0f113a; */
+  background: linear-gradient(rgba(15,17,58,1) 50%, rgba(15,17,58,.5));
+  height: 100px;
+  width: 100%;
+  position: relative;
+  clip-path: polygon(
+    0% 0%, 
+    calc(100% - 30px) 0%, 
+    100% 30px, 
+    100% 100%,
+    30px 100%,
+    0% calc(100% - 30px)
+  );
+
 `
