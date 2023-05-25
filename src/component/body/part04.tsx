@@ -1,17 +1,14 @@
 import styled from "styled-components"
 import { useTeamBar } from "../../useData/use-teamBar"
-import XChartBox from "../chart-box"
 
 const Part04 = () => {
 
   const [chart] = useTeamBar()
 
   return (
-    <XChartBox title="团队增值">
-      <Content>
-        <div className="item" style={{ width: 900, height: 200 }} ref={chart} ></div>
-      </Content>
-    </XChartBox>
+    <Content>
+      <div className="item" style={{ width: 900, height: 200 }} ref={chart} ></div>
+    </Content>
   )
 }
 
