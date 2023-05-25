@@ -1,12 +1,12 @@
-import { useRead } from "../../useData/useRead"
+import { useTeamBar } from "../../useData/useTeamBar"
 import Panel from "../panel"
 
 const Part08 = () => {
-  // const [chart] = useRead()
+  const [chart] = useTeamBar()
 
   return (
-    <Panel width={385} height={258} title="课外阅读">
-      {/* <div style={{ width: 380, height: 200 }} ref={chart} /> */}
+    <Panel width={385} height={258} title="团队增值">
+      <div style={{ width: 380, height: 200 }} ref={chart} />
     </Panel>
   )
 }

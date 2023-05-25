@@ -1,10 +1,9 @@
-export default {
+const option = {
   radius: '60%',
   activeRadius: '70%',
-  lineWidth: 39,
+  lineWidth: 32,
   digitalFlopStyle: {
     fontSize: 20,
-    // fill: '#32a4fa'
   },
   data: [
     {
@@ -28,4 +27,8 @@ export default {
       value: 30
     }
   ]
+}
+
+export const useScore = () => {
+  return option
 }
