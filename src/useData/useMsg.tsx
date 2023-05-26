@@ -51,7 +51,9 @@ function getO() {
   // data.sort((a, b) => a[0] - b[0])
   data = data.map(item => {
     const time = item[0]
-    item[0] = getTimeString(time)
+    item[0] = `<span style='color:#6690bc' >${getTimeString(time)}</span>`
+    item[1] = `<span style='color:#6690bc' >${item[1]}</span>`
+    item[2] = `<span style='color:#6690bc' >${item[2]}</span>`
     return [...item]
   })
 

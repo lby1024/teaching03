@@ -1,17 +1,31 @@
-import styled from "styled-components"
+import styled, { CSSProperties } from "styled-components"
 import Panel from "../panel"
+import pic from '../../static/study.svg'
+import { useRealBar } from "../../useData/useRealBar"
+import { useAfter } from "../../useData/useAfter"
+import Classes from "../clases"
+import { PercentPond } from '@jiaminghi/data-view-react'
+import Glass from "../glass"
+import Percent from "../percent"
 
 const Up = () => {
   return <UpContent></UpContent>
 }
 
 const Part04 = () => {
-
+  const [chartBar] = useRealBar()
+  const [chartLine] = useAfter()
 
   return (
     <Content>
       <Up />
-      <Panel width={792} height={410} ></Panel>
+      <Panel width={792} height={410} title='智慧课堂' >
+        <Classes />
+        <Percent />
+        <div className="bar" ref={chartBar} />
+        <div className="line" ref={chartLine} />
+        <Pic></Pic>
+      </Panel>
     </Content>
   )
 }
@@ -25,7 +39,34 @@ const Content = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    `
+    position: relative;
+    .bar{
+      width: 310px;
+      height: 200px;
+      position: absolute;
+      bottom: 150px;
+      right: 20px;
+    }
+    .line{
+      width: 390px;
+      height: 170px;
+      position: absolute;
+      bottom: 0px;
+      right: 50px;
+    }
+`
+
+const Pic = styled.div`
+  position: absolute;
+  left: 30px;
+  bottom: -30px;
+  opacity: .88;
+  background-image: url(${pic});
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+`
 
 const UpContent = styled.div`
   /* background-color: #0f113a; */
@@ -41,5 +82,4 @@ const UpContent = styled.div`
     30px 100%,
     0% calc(100% - 30px)
   );
-
 `
