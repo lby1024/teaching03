@@ -1,6 +1,7 @@
 import { CSSProperties } from "react"
 import styled from "styled-components"
 import Glass from "../glass"
+import DigitalFlop from "../Icon/digitalFlop"
 
 const Classes = () => {
 
@@ -16,9 +17,9 @@ const Classes = () => {
   return <Glass style={style} >
     <ClassesContent>
       <div className="t">智慧课堂(节)</div>
-      <div>2021学年: <span>13820</span></div>
-      <div>2022学年: <span>10650</span></div>
-      <div>2023学年: <span>5650</span></div>
+      <div className="item">2021学年: <DigitalFlop n="1832" fontSize={12} /></div>
+      <div className="item">2022学年: <DigitalFlop n="1998" fontSize={12} /></div>
+      <div className="item">2023学年: <DigitalFlop n="1021" fontSize={12} /></div>
     </ClassesContent>
   </Glass>
 }
@@ -33,6 +34,9 @@ const ClassesContent = styled.div`
   .t{
     margin-bottom: 0px;
     color: #fff;
+  }
+  .item{
+    display: flex;
   }
   div{
     color: #79839E;

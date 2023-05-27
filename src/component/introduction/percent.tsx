@@ -1,5 +1,6 @@
 import { PercentPond } from '@jiaminghi/data-view-react'
 import styled from 'styled-components'
+import DigitalFlop from '../Icon/digitalFlop'
 const fullWidth = 300
 const borderGap = 1
 const borderWidth = 1
@@ -20,9 +21,10 @@ const config = {
 
 const Percent = () => {
   return <Content>
-    <div className="num" style={{ color: '#01c4f9' }} >39</div>
+    {/* <div className="num" style={{ color: '#01c4f9' }} >39</div> */}
+    <DigitalFlop n="39" fontSize={12} color="#01c4f9" />
     <PercentPond config={config} style={{ width: '160px', height: '20px' }} />
-    <div className="num" style={{ color: '#c135ff' }} >12</div>
+    <DigitalFlop n="12" fontSize={12} color="#c135ff" />
   </Content>
 }
 

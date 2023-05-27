@@ -52,7 +52,7 @@ const UpContent = styled.div`
     justify-content: space-around;
     align-items: center;
     width: 70%;
-    border-right: 5px solid black;
+    border-right: 5px solid #010310;
   }
   .right{
     width: 250px;

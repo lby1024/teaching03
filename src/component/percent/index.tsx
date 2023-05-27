@@ -1,6 +1,7 @@
 import { CSSProperties } from "react"
 import styled from "styled-components"
 import Glass from "../glass"
+import DigitalFlop from "../Icon/digitalFlop"
 
 const Percent = () => {
 
@@ -16,7 +17,8 @@ const Percent = () => {
   return <Glass style={style} >
     <PerContent>
       <div className="t">教师使用率(月)</div>
-      <div className="n">82.33%</div>
+      {/* <div className="n">82.33%</div> */}
+      <DigitalFlop n="82.33%" fontSize={21} />
     </PerContent>
   </Glass>
 }
@@ -29,11 +31,7 @@ const PerContent = styled.div`
   padding-top: 9px;
   padding-left: 15px;
   .t{
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     color: #fff;
-  }
-  .n{
-    color: #13c1f7;
-    font-size: 21px;
   }
 `

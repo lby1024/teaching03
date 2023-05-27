@@ -1,16 +1,15 @@
 import { FC } from "react"
 import styled from "styled-components"
+import DigitalFlop from "../Icon/digitalFlop"
 
 interface ItemProps {
   pic: any,
-  title?: string,
-  subTitle?: string,
-  line1?: string,
-  line2?: string,
+  title: string,
+  subTitle: string,
 }
 
 const Item: FC<ItemProps> = (props) => {
-  const { pic, title, subTitle, line1, line2 } = props
+  const { pic, title, subTitle } = props
 
   return <ItemContent>
 
@@ -21,7 +20,7 @@ const Item: FC<ItemProps> = (props) => {
 
     <div className="info">
       <div className="title">{title}</div>
-      <div className="desc">{subTitle}</div>
+      <DigitalFlop n={subTitle} fontSize={27} />
     </div>
 
   </ItemContent>
@@ -36,10 +35,7 @@ const ItemContent = styled.div`
     padding-top: 10px;
     .title{
       font-size: 12px;
-    }
-    .desc{
-      font-size: 28px;
-      color: rgb(19 193 247);
+      margin-bottom: 9px;
     }
   }
 `
