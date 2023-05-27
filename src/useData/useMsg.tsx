@@ -1,5 +1,5 @@
 import mockjs from "mockjs"
-import { num } from "../utils/api"
+import { getName, num } from "../utils/api"
 
 const option = {
   data: [],
@@ -30,11 +30,6 @@ function getTimeString(t: number) {
     hours = `0${hours}`
   }
   return `${hours} : ${min}`
-}
-
-
-function getName() {
-  return mockjs.mock({ name: '@cname' }).name
 }
 
 const classes = ['电动列车操作', '轨道交通自动运维', '车辆机械系统检修']

@@ -1,18 +1,14 @@
+import { useIng } from "../../useData/useIng"
 import Panel from "../panel"
-import { ScrollRankingBoard } from '@jiaminghi/data-view-react'
-import { useRank } from "../../useData/useRank"
 
-const Part01 = () => {
-
-  const config = useRank()
+const Part09 = () => {
+  const [chart] = useIng()
 
   return (
-    <Panel width={387} height={258} title='总成绩排名'>
-      <div style={{ paddingLeft: 12 }} >
-        <ScrollRankingBoard config={config} style={{ width: '360px', height: '220px' }} />
-      </div>
+    <Panel width={387} height={258} title="课前认知学">
+      <div style={{ width: 380, height: 200 }} ref={chart} />
     </Panel>
   )
 }
 
-export default Part01
+export default Part09

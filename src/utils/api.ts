@@ -1,7 +1,14 @@
+import mockjs from "mockjs";
+
 export interface IData {
     x: string[]
     series: number[]
 }
+
+export function getName() {
+    return mockjs.mock({ name: '@cname' }).name
+}
+  
 
 export function num(max: number, min=10) {
     min = Math.ceil(min);

@@ -4,16 +4,16 @@ import { useData } from "../hooks/use-data";
 import { dataChart12, IData03 } from "../utils/api";
 
 const option: any = {
-  title: {
-    text: '课后拓展学',
-    left: 50,
-    top: 0,
-    textStyle: {
-      fontSize: 14,
-      fontWeight: 'normal',
-      color: '#fff'
-    }
-  },
+  // title: {
+  //   text: '课后拓展学',
+  //   left: 50,
+  //   top: 0,
+  //   textStyle: {
+  //     fontSize: 14,
+  //     fontWeight: 'normal',
+  //     color: '#fff'
+  //   }
+  // },
   xAxis: {
     type: 'category',
     data: [0, 18, 28, 38, 48, 58, 68, 78],

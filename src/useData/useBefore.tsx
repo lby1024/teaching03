@@ -34,7 +34,7 @@ const option: any = {
     left: 50,
     right: 30,
     top: 30,
-    bottom: 60,
+    bottom: 56,
   },
   series: [{
     data: [

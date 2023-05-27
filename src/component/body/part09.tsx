@@ -1,14 +1,15 @@
-import { useIng } from "../../useData/useIng"
 import Panel from "../panel"
+import { useAfter } from "../../useData/useAfter"
 
-const Part09 = () => {
-  const [chart] = useIng()
+const Part01 = () => {
+
+  const [chart] = useAfter()
 
   return (
-    <Panel width={385} height={258} title="课中递进学">
-      <div style={{ width: 380, height: 200 }} ref={chart} />
+    <Panel width={385} height={258} title='过程评价'>
+      <div style={{ width: 399, height: 200 }} ref={chart} />
     </Panel>
   )
 }
 
-export default Part09
+export default Part01

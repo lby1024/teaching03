@@ -1,16 +1,14 @@
 import Panel from "../panel"
-import { ActiveRingChart } from '@jiaminghi/data-view-react'
-import { useScore } from '../../useData/useScore'
+import { useRead } from "../../useData/useRead"
 
-
-const Part05 = () => {
-  const config = useScore()
+const Part06 = () => {
+  const [chart] = useRead()
 
   return (
-    <Panel width={387} height={258} title='教学考评' >
-      <ActiveRingChart config={config} style={{ width: '390px', height: '220px' }} />
+    <Panel width={387} height={258} title="课外阅读">
+      <div style={{ width: 380, height: 200 }} ref={chart} />
     </Panel>
   )
 }
 
-export default Part05
+export default Part06
