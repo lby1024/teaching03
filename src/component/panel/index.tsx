@@ -6,11 +6,12 @@ interface PanelProps {
   width: number,
   height: number,
   title: string,
+  subtitle?: string,
   children?: any
 }
 
 const Panel: FC<PanelProps> = (props) => {
-  const { width, height, children, title } = props
+  const { width, height, children, title, subtitle } = props
 
   const styl: CSSProperties = {
     width,
@@ -20,6 +21,7 @@ const Panel: FC<PanelProps> = (props) => {
   return <Content style={styl}>
     <h3 className="title">
       <span className="title-left">{title}</span>
+      <div className="sub-title">{subtitle}</div>
     </h3>
     {children}
     <XBorder className="border" width={width} height={height} />
@@ -50,6 +52,14 @@ const Content = styled.div`
       border-bottom: 2px solid rgba(10,82,153,1.000);
       padding-bottom: 6px;
       display: inline-block;
+    }
+    .sub-title{
+      position: absolute;
+      bottom: 7px;
+      right: 0;
+      font-size: 12px;
+      opacity: .3;
+      color: #fff;
     }
   }
 `

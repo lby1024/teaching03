@@ -31,6 +31,7 @@ const Body: FC<IBody> = (props) => {
 export default Body
 
 const Content = styled.div`
+    position: relative;
     height: 99%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;

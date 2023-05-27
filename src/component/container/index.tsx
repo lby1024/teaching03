@@ -17,6 +17,7 @@ const XContainer: FC<IXContainer> = (props) => {
     return <Content scale={scale} width={designWidth} height={designHeight} >
         <div className="c-header">{props.header}</div>
         <div className="body">{props.body}</div>
+        <div className="footer"></div>
     </Content>
 }
 
@@ -36,7 +37,7 @@ const Content = styled.div<{
     top: 50%;
     display: flex;
     flex-direction: column;
-    padding-bottom: 18px;
+    /* padding-bottom: 18px; */
     .c-header{
         height: 65.45px;
         margin-bottom: 18px;

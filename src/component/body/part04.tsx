@@ -13,7 +13,7 @@ const Part04 = () => {
   return (
     <Content>
       <Introduction />
-      <Panel width={792} height={410} title='智慧课堂' >
+      <Panel width={792} height={410} title='智慧课堂' subtitle="课程名称: 无人驾驶列车故障处理, 班级: 20交车1班" >
         <Classes />
         <Percent />
         <div className="bar" ref={chartBar} />
