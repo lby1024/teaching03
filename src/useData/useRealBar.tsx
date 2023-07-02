@@ -8,29 +8,29 @@ const legends = ['电动列车操作', '轨道交通自动运维']
 // const legends = ['电', '轨']
 
 const option: any = {
-  title: {
-    text: '实景练数据',
-    left: 0,
-    top: 0,
-    textStyle: {
-      fontSize: 14,
-      fontWeight: 'normal',
-      color: '#fff'
-    }
-  },
+  // title: {
+  //   text: '实景练数据',
+  //   left: 0,
+  //   top: 0,
+  //   textStyle: {
+  //     fontSize: 14,
+  //     fontWeight: 'normal',
+  //     color: '#fff'
+  //   }
+  // },
   textStyle: {
     fontSize: 12,
     color: '#79839E'
   },
-  legend: {
-    data: legends,
-    // orient: 'vertical', // horizontal
-    left: 100,
-    top: 0,
-    itemWidth: 12,
-    itemHeight: 8,
-    textStyle: { color: "#fff", fontSize: 11 }
-  },
+  // legend: {
+  //   data: legends,
+  //   // orient: 'vertical', // horizontal
+  //   left: 100,
+  //   top: 0,
+  //   itemWidth: 12,
+  //   itemHeight: 8,
+  //   textStyle: { color: "#fff", fontSize: 11 }
+  // },
   grid: {
     left: 10,
     right: 10,

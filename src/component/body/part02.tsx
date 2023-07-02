@@ -16,7 +16,7 @@ export default Part02
 const config = {
   data: [
     {
-      name: '前测',
+      name: '测试活动',
       value: 167
     },
     {
