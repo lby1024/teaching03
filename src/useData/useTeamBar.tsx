@@ -18,8 +18,8 @@ const bar = {
 }
 
 const n = () => {
-  const res = num(20, -20)
-  if (res > -10 && res < 10) return 12
+  const res = num(10, 5)
+  // if (res > -10 && res < 10) return 12
   return res
 }
 
@@ -30,16 +30,16 @@ const option = {
       type: 'shadow'
     }
   },
-  legend: {
-    data: legends,
-    left: 10,
-    top: 10,
-    textStyle: { color: "#fff", fontSize: 9 },
-    itemWidth: 15,
-    itemHeight: 8,
-  },
+  // legend: {
+  //   data: legends,
+  //   left: 10,
+  //   top: 10,
+  //   textStyle: { color: "#fff", fontSize: 9 },
+  //   itemWidth: 15,
+  //   itemHeight: 8,
+  // },
   grid: {
-    top: 50,
+    top: 20,
     bottom: 20,
     right: 10,
   },

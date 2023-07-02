@@ -24,7 +24,7 @@ const Percent = () => {
     {/* <div className="num" style={{ color: '#01c4f9' }} >39</div> */}
     <DigitalFlop n="39" fontSize={12} color="#01c4f9" />
     <PercentPond config={config} style={{ width: '160px', height: '20px' }} />
-    <DigitalFlop n="12" fontSize={12} color="#c135ff" />
+    <DigitalFlop n="4" fontSize={12} color="#c135ff" />
   </Content>
 }
 

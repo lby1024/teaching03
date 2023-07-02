@@ -10,8 +10,8 @@ import Percent from "./percent";
 const Introduction = () => {
   return <UpContent>
     <div className="left">
-      <Item pic={engineer} title='市级技能大师' subTitle="3" />
-      <Item pic={teacher} title="老师人数" subTitle="12" />
+      <Item pic={engineer} title='市级技能大师' subTitle="1" />
+      <Item pic={teacher} title="老师人数" subTitle="4" />
       <Item pic={student} title="学生人数" subTitle="39" />
     </div>
 
