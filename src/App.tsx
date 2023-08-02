@@ -6,7 +6,7 @@ function App() {
 
   return (
     <XContainer
-      header={<XHeader>智学通教学评一体数字化平台</XHeader>}
+      header={<XHeader>育匠通数智教学平台</XHeader>}
       body={<Body />}
     />
   );

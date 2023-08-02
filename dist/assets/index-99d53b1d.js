@@ -1373,4 +1373,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         /* background-color: #142342; */
         /* background-color: red; */
     }
-`;function App(){return jsx(XContainer,{header:jsx(XHeader,{children:"智学通教学评一体数字化平台"}),body:jsx(Body,{})})}const reset="";ReactDOM.render(jsx(App,{}),document.getElementById("root"));
+`;function App(){return jsx(XContainer,{header:jsx(XHeader,{children:"育匠通数智教学平台"}),body:jsx(Body,{})})}const reset="";ReactDOM.render(jsx(App,{}),document.getElementById("root"));
